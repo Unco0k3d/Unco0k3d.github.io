@@ -125,9 +125,6 @@ body{
     }
     #img-container{margin-top: 1em;}
 }
-button[type='submit']{
-
-}
 @keyframes fadeIn{
     from{opacity: 0;}
     to{opacity: 1;}
