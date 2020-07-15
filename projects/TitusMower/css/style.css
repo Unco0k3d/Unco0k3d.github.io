@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+    background-color: black;
+
+}
+.slide-line{
+    padding: .1em;
+    animation: slideInLeft 1s;
+    background-color: white;
+    margin: 0;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#ICC img{
+    width: 6.5em;
+}
+#logo img{
+    padding: 1em 1em 1em 1em;
+    background-color: white;
+    animation: bounceIn 1s;
+}
+#hours-num{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: .3em;
+    font-size: .9em;
+}
+#store-hours,#number{
+    text-align: center;
+}
+#hours-num-line{margin: .5em 0 .5em 0;}
+#nav-bar{
+    background-color: lightgray;
+    border-bottom: black solid;
+    border-top: black solid;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: slideInRight 1s;
+    line-height: 3em;
+}
+#nav-bar li{
+    list-style: none;
+}
+#nav-bar li a{
+    text-decoration: none;
+    background-color: #cb0101;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+    border: black solid;
+    border-radius: 5px;
+}
+#nav-bar li a:hover{
+    background-color: black;
+    border: #cb0101 solid;
+    color: whitesmoke;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+#nav-bar li a:focus{
+    background-color: black;
+    border: #cb0101 solid;
+}
+#payment{
+    width: 7em;
+    border: black solid 1px;
+}
+
+@media(max-width: 700px){
+    #header{
+        display: grid;
+        grid-template-areas:
+        'logo icc'
+        'hour-num .'
+        ;
+    }
+    #logo img{
+        grid-area: logo;
+        padding: 0;
+    }
+    #ICC img{
+        grid-area: icc;
+        width: 3.7em
+    }
+    #hours-num{
+        grid-area: hour-num;
+        font-size: .7em;
+        flex-direction: row;
+    }
+    #store-hours{margin-right: 2em;}
+    #nav-bar{font-size: .9em;}
+    #hours-num-line{display: none;}
+}

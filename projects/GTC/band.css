@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* backround */
+html,
+body {
+  margin: 0 auto;
+}
+
+.icons{
+  float: right;
+  color: white;
+  background: black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.links a {
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: white;
+  font-family: permanent marker;
+  padding: 1em;
+  /* border-radius: 1rem; */
+}
+
+.links div{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.links a:hover {
+  color: gray;
+  padding: 2em;
+}
+
+main {
+  background-image: url("img/band.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  overflow: auto;
+}
+
+/* landing page */
+#landing-page h1{
+  color: white;
+  text-align: center;
+  background: fixed;
+  width: 100%;
+  margin-top: 20%;
+  background-color: rgba(43, 39, 39, 0.8);
+  font-family: "permanent marker";
+  animation: fadeIn 3s;
+}
+
+
+#landing-page a {
+  text-decoration: none;
+  color: white;
+}
+
+#landing-page a:hover {
+  transition-delay: 2ms;
+  transition-duration: 3s;
+  color: rgb(143, 78, 78);
+}
+
+/* Home */
+
+#header {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 196, 119);
+  text-align: center;
+  font-family: permanent marker;
+  font-size: 3em;
+}
+
+.headers {
+  background-color: rgba(5, 5, 5, 0.9);
+  color: rgb(238, 213, 181);
+  text-align: center;
+  /* margin-top: 5%; */
+  font-family: permanent marker;
+  font-size: 2em;
+}
+
+.paragraphs {
+  font-family: nanum brush script;
+  font-size: 2em;
+  background-color: rgba(88, 88, 88, 0.8);
+  text-align: center;
+  color: rgb(238, 233, 226);
+}
+
+.members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* animation: slideFromBottom; */
+  animation-duration: 3s;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.members-container>.img-background {
+  background-color: cornsilk;
+  padding: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px;
+}
+
+.members-container>.img-background:hover{
+    box-shadow: 0 0 20px;
+}
+
+.members-container>.img-background>.cover{
+  background: black;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.members-container>.img-background>.cover>img{
+  border: solid 1px;
+  animation: fadeIn;
+  animation-duration: 10s;
+}
+
+.img-text {
+  text-align: center;
+  font-family: nanum brush script;
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#jaffy{
+  transform: rotate(10deg);
+}
+
+#jon{
+  transform: rotate(-7deg);
+}
+
+#jordan{
+  transform: rotate(-12deg);
+}
+
+#jeff{
+  transform: rotate(7deg);
+}
+
+#zach{
+  transform: rotate(20deg);
+}
+
+/* .members-container:nth-child(2){
+  transform: rotate(10deg);
+} */
+
+.members-container img {
+  width: 150px;
+  height: 150px;
+}
+
+/* shows */
+#show-locations{
+  background-color: rgba(43, 39, 39, 0.9);
+  text-align: center;
+  color: white;
+  font-family: nanum brush script;
+  font-size: 2.5em;
+  padding-top: 1em;
+
+}
+
+#show-locations li{
+  animation: slideFromBottom;
+  animation-duration: 3s;
+}
+
+
+#show-locations img{
+  border: solid cornsilk;
+  box-shadow: black 5px 5px 5px;
+  display: inline-block;
+  max-width: 90%;
+  height: auto;
+}
+
+/* Set List */
+
+#setlist li{
+  background-color: rgba(43, 39, 39, .9);
+  /* margin-top: 1em; */
+  color: white;
+  font-family: nanum brush script;
+  font-size: 2em;
+  text-align: center;
+  animation: slideFromBottom;
+  animation-duration: 3s;
+}
+
+/* keyframes */
+@keyframes slideFromBottom {
+  0%{
+    margin-top: 100%; 
+  }
+
+  100% {
+    margin-bottom: 0%;
+  }
+}

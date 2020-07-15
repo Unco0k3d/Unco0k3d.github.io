@@ -1,0 +1,52 @@
+<div class="contactMe">
+        <form>
+          <fieldset id="container">
+            <legend id="legend">Your Contact Information</legend>
+    
+            <div id="first">
+              <label for="first"
+                >First Name
+                <input type="text" placeholder="Jane" required />
+              </label>
+            </div>
+    
+            <div id="last">
+              <label for="last"
+                >Last Name
+                <input type="text" placeholder="Doe" />
+              </label>
+            </div>
+    
+            <div id="email">
+              <label for="email"
+                >Email
+                <input type="email" placeholder="janedoe@example.com" required />
+              </label>
+            </div>
+    
+            <div id="phone">
+              <label for="phone"
+                >Home/Cell Number
+                <input type="tel" placeholder="555-555-5555" />
+              </label>
+            </div>
+    
+            <div id="pref">
+              <label for="prefered"
+                >Prefered contact medium/time<br />
+                <textarea
+                  name="prefered"
+                  id="prefered"
+                  cols="30"
+                  rows="10"
+                  placeholder="Phone/Email & Availability"
+                ></textarea>
+              </label>
+            </div>
+    
+            <div id="submit">
+              <button type="submit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa|Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        
+        <header>stuxnet</header>
+    
+        <a href="#intro">Introduction</a>
+        <a href="#keyTerms">Key Terms</a>
+        <a href="#howItWorked">How stuxnet Worked</a>
+        <a href="#implications">Implications</a>
+        <a href="#sources">Sources</a>
+    
+    </nav>
+    <!-- <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+            <a href="#intro">Introduction</a>
+            <a href="#keyTerms">Key Terms</a>
+            <a href="#howItWorked">How stuxnet Worked</a>
+            <a href="#implications">Implications</a>
+            <a href="#sources">Sources</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+
+    <main id="main-doc">
+
+        <section id="intro" class="main-section">
+
+            <header>Introduction</header>
+                <p>
+                    Though it is not known exactly when Stuxnet was developed, a company called “VirusBlokAda” discovered it in June 2010.
+                    It can be categorized as a worm, but it has been said that it is not a conventional worm, maybe in a sense that it does
+                    not behave as worms that precede it. Comparing its elements of propagation to a conventional worm, the stuxnet worm
+                    propagation is limited. This is one of the first clues to what its actual purpose is.
+                    
+                    Though there is no concrete evidence of where it came from or who developed it, the way it was designed overwhelmingly
+                    causes one to infer that the intention of its design was to cripple Iran’s nuclear development program because the
+                    Iranian Natanz nuclear plant was ultimately affected by stuxnet out of the 14 plants it was found in. [8] Thus, also
+                    overwhelmingly suggesting that it was a politically motivated cyber-attack. The most likely developers of such a
+                    sophisticated cyber-weapon, due to its target, point the finger at the United States as the developer with the
+                    assistance of Israel or vise-versa. Some experts say that stuxnet has opened the door to cyber-warfare, and some do not
+                    agree, but that is a whole other argument that can be discussed in another paper. Stuxnet had such notoriety due to two
+                    attributes. One, its intended targets, and two, the sophistication of its code. It is said to be 500kb in size [1],
+                    about 15000 lines of code, which is comparatively lower in size compared to common malware. It is extremely selective in
+                    its targets and it contained four zero-day exploits, this is comparatively higher than its predecessors.
+                    
+                    This paper will not delve deep into the political realm of stuxnet. Rather, it will go into detail explaining how this
+                    cyber-weapon worked. The second section titled “Implications” is where a minor political discussion will take place. The
+                    intended audience is for the average computer user with a basic knowledge of computer systems. The paper will first
+                    review some key computer related terms in order to help the reader digest the information. The paper then will continue
+                    explaining how stuxnet worked. It will do so in a phase sequence, more specifically: Phase1 Infection, Phase2 Search,
+                    Phase3 Update, Phase4 Compromise, Phase5 Control, Phase 6 Deceive and Destroy.
+                </p>
+        </section>
+
+        <section id="keyTerms" class="main-section">
+            
+            <header>Key Terms</header>
+                <p>
+                    <b>PLC (Programmable Logic Controller)</b> – A physical electronic device that monitors and controls an industrial machine or
+                    piece of equipment. A PLC is not exactly software nor is it firmware; PLC’s are hardwired to the industrial devices
+                    themselves using what’s known as a field-bus connection where ladder-logic operates. The device can receive commands,
+                    but not send commands. It can only send data back based on its current physical status. [2]
+                </p>
+                <p>
+                    <b>Ladder Logic</b> – Language that PLC’s use and understand. Ladder Logic operates by electromechanical means.
+                </p>
+                <p>
+                    <b>Drivers</b> – A piece of designated software required for communication between two devices in the case that they are
+                    connected. Driver software is a subset of the DLL which was used for the print spooler to communicate with an infected
+                    device. This is later explained in the infection phase. [5]
+                </p>
+                <p>
+                    <b>DLL (Dynamic Link Library)</b> – A Microsoft based implementation for a library of software where a piece of software is
+                    called by a program or a device only when it is needed to execute a special need or function. A benefit to this would be
+                    having functionality available whilst saving space in RAM, but stuxnet exploited the DLL for a malicious purpose
+                    explained later. [5]
+                </p>
+                <p>
+                    <b>SCADA (Supervisory control and data acquisition)</b> – originally developed in the 1950’s and implemented in the industrial
+                    environment to help monitor and control industrial systems. In the years leading up to now SCADA capability has grown
+                    immensely especially with the evolution and regulation in network technology. Not only that, SCADA systems now store
+                    data and present data in such a manner that helps the operators make better decisions in troubleshooting and
+                    predictions. [3]
+                </p>
+                <p>
+                    <b>Dropper</b> – A dropper is simply transfer agent code that contains the malicious code and “drops” the malware when it
+                    reaches its anticipated target.
+                </p>
+                <p> 
+                    <b>Printer spooler exploit (MS10-061)</b> – A Microsoft specific vulnerability. A print spooler is software that is hosted on a
+                    printing device or a print server to queue print jobs from multiple machines. This vulnerability allows exploiters to
+                    execute code remotely, thus allowing control of multiple machines running windows OS from a single machine running
+                    Windows OS in that Local Area Network. [1]
+                </p>
+                <p> 
+                    <b>Rootkit</b> - A rootkit provides a privileged access to a PC, an advantage to a rootkit is its inherent nature of
+                    being hard
+                    to detect due to the fact that it starts running before the OS boots, and on top of that it gains security privileges to
+                    hide its presence.
+                </p>
+                <p>
+                    <b>Autorun worm</b> - A specific type of worm that propagates itself by copying itself to root directories of the
+                    machines hard
+                    drive and or flash drive.
+                </p>
+                <p>
+                    <b>Firmware</b> – Permanent software that is programmed into a read-only memory (Google definition)
+                </p>
+                <p>
+                    <b>Zero-day</b> – a vulnerability in a piece of software that gives unauthorized access to the program. Patched zero days ago,
+                    meaning not patched at all, hence the term zero-day.
+                </p>
+                
+        </section>
+        
+        <section id="howItWorked" class="main-section">
+            
+            <header>How stuxnet Worked</header>
+                <p>
+                   <b> Phase 1:</b> Infection
+                    It is said that the initial deployment of stuxnet was from a flash drive, and this made it similar to an Autorun worm.
+                    The files on the flash drive that contained stuxnet were hidden files. Once plugged into a device the files would then
+                    enter the system cloaking itself with stolen certificates to impersonate a legit licensed piece of software. There were
+                    a total of two certificates, one from Realtek and the other from JMicron. It would then maneuver through the machine via
+                    the dropper code and would remain hidden through the use of a rootkit, Trojan-Dropper:W32/Stuxnet, Rootkit:W32/Stuxnet,
+                    Trojan-Dropper.Win32.Stuxnet.a, Trojan.Agent.AQCK to be more specific. The following files are uploaded to the device
+                    once the flash drive is plugged in.
+                </p>
+                    <ul>
+                        <li>2 files ( mrxcls.sys and mrxnet.sys) - Dropped in C:\Windows\System32\Drivers folder [6]</li>
+                        <li>C:\Windows\inf\oem7a.PNF - An encrypted DLL file, the trojan-dropper's main component [6]</li>
+                        <li>C:\Windows\inf\mdmcpq3.PNF - An encrypted data file [6]</li>
+                        <li>C:\Windows\inf\mdmeric3.PNF [6]</li>
+                        <li>C:\Windows\inf\oem6c.PNF [6]</li>
+                    </ul>
+                <p>
+                    It would accomplish propagation in the local network through the print spooler exploit (MS10-061) using the print
+                    spooler driver as a means of transportation and gaining administrative/root access to other machines. Once it had remote
+                    access to other machines it would copy itself to the local hard drive of that machine and a flash drive if one was found
+                    on that machine. Stuxnet was only allowed to infect three other flash drives, and on top of that it was given a time
+                    limit of twenty-one days to locate another flash drive to infect. After that, stuxnet had the capability of erasing
+                    itself completely. This suggests that stuxnet intended to maintain its secrecy through infection limitation. [1]
+                </p>
+                <p>
+                    <b>Phase 2:</b> Search
+                    From the print spooler it was also in search of machines running Siemens WinCC/Step 7 database software. This software
+                    is a SCADA system that is developed by Siemens that is designed to run on the Windows OS. If it did not find the Siemens
+                    WinCC/Step 7 software, it would automatically delete itself. It is said that stuxnet had deep knowledge of the Siemens
+                    SCADA software. [1]
+                </p>
+                <p>
+                    <b>Phase 3:</b> Update
+                    Stuxnet had the ability to update itself, but it had to meet two conditions. One, obviously it had to have an internet
+                    connection. Two, it had to have found its likely target. [1]
+                </p>
+                <p>
+                    <b>Phase 4:</b> Compromise
+                    Once it reached a machine running Siemens WinCC/Step 7 it copied itself to the server through SQL injection bypassing
+                    the hardcoded password which obviously suggests that this Siemens SCADA software had SQL injection vulnerabilities. It
+                    then was to detect specific conditions, (to detect certain devices being controlled) then modifies the code pertaining
+                    to those conditions. It is said that stuxnet identified the vendor specific products by its model number, configuration
+                    details, and downloading program code from the controllers themselves. More specifically, these targeted controllers
+                    were Siemens model 315 and model 417. The 317 model was Siemen’s basic controller. The 417 model was a more complex
+                    model. The complexity of the attack code targeted for the 315 model was four times less complex compared to the 417
+                    model’s attack code. [2]
+                </p>
+                <p>
+                    <b>Phase 5:</b> Control
+                    After and if it found its intended target, stuxnet then loaded the rogue code onto the controllers. Stuxnet replaced the
+                    PLC’s original .dll file with a malicious .dll file, it then entered the controllers though the “executive loop” or in
+                    other words, “main cycle”. This main cycle can be thought of as a main() function in a C program. The 315 controller had
+                    a second point of entry, through its “100-ms timer” which is an “interruption handler” that the OS would call every
+                    100-ms. This is how the code got injected into the controllers. Stuxnet had the ability to modify its own code depending
+                    on the targets CPU. [2]
+                </p>
+                <p>
+                    <b>Phase 6:</b> Deceive & Destroy
+                    Once it had invaded the PLC’s it now could execute its mission. The attack code is written with a set of sub functions
+                    and the goal was to get any one of these functions called. It did not overwrite the logic on the PLC, it resided
+                    alongside the original code. It did not take over the factory code completely; it instead occasionally took over the
+                    factory code. Supposedly it was triggered by a complex timing system. The initial state of running alongside the factory
+                    code just monitored the controller. Eventually when the time to strike came the attack code took control. This is more
+                    so how it worked; once stuxnet’s payload was dropped the digital war-heads it could now execute their mission, it would
+                    wait for the centrifuges to run between 810Hz and 1210Hz. This is one of the key data for stuxnet to know that these
+                    motors were the motors controlling the centrifuges used to enrich uranium because these are the precise electrical
+                    frequencies needed, that translate into RPM’s, to accomplish uranium enrichment. At about one month intervals there
+                    would be a moment where stuxnet would configure the centrifuge motors to oscillate between 1410 rotations per-minute and
+                    2 rotations per-minute. This oscillation intended to destroy the rare uranium material inside of the centrifuge. Once
+                    this process was accomplished, it then would resume to a normal frequency of 1064Hz for about a month. [7]
+                    As for the 417 controller, stuxnet managed a different style of attack execution. For the 417 controllers stuxnet used a
+                    man-in-the-middle form of attack, meaning intercepting commands from the program controlling the PLC and intercepting
+                    data coming from the PLC. Stuxnet code would replace legitimate program code with a fake “process image”. This was all
+                    accomplished while stuxnet provided false feedback to the SCADA system so that it could maintain its stealth and not
+                    alert the operators. [2]
+                </p>
+        </section>
+        
+        <section id="implications" class="main-section">
+            
+            <header>Implications</header>
+                <p>
+                    Stuxnet was not intended to be discovered for obvious reasons. Though its developers might have seen the risk of its exposure, it was still released, most likely as a calculated risk. stuxnet is also considered open source software giving anyone the capability to download it and study it. Although there has been patches to counter the threat of stuxnet the patches only have effect on the dropper code. The so-called “digital warheads” are still capable of exploiting similar PLC’s. They cannot be patched because the logic is hardwired into the Siemens PLC’s themselves. Therefore, the world must wait till Siemens comes out with another generation of PLC’s. There is speculation that new dropper code can be developed and obtained fairly easy. There is already an array of stuxnet lookalikes. Examples include, Flame, DuQu, MiniDuke, CosmicDuke, Agent.BTZ, and mycoplasma mycoides SPTH-syn1.0. Though no major threats or deaths have been recorded as a result of these as far as the media knows. Stuxnet has essentially opened Pandora’s box, so to speak giving the world a new threat to defend ourselves against.
+                    Despite the dangers of this new threat, there is great opportunity to come up with ways to combat it or defend ourselves from it. One solution suggested by Ralph Langer in his article “Stuxnet: Dissecting a Cyberwarfare Weapon” is to secure a PLC is to allow for digital signatures on the code. A signature on the code would allow for the PLC to make sure that the code is from its original source. Another solution he Langer suggested would be to monitor the controllers for any change via the network. The key in this solution is to avoid using the vendor specific DLL and use an independent driver to check for changes by identifying controllers as stuxnet did. [2]
+                    After the discovery of stuxnet officials became worried that the general infrastructure was vulnerable. There has been much discussion on information security since then and major nations, such as the US, UK, China, and Russian Federation are taking precaution by establishing or beefing up their cyber-defense programs.[1] The United States alone has implemented the following:
+                </p>
+                    <ul>
+                        <li>Creation of the office of Cyber Security and Communications in the National Protection and Programs Directorate of the Department of Homeland Security. This office also includes the National Cyber-security and Communications Integration Center mentioned previously, the National Cyber Security Division, and the US-CERT. [8]</li>
+                        <li>Appointment of a cyber-security coordinator in the White House. [8]</li>
+                        <li>Issuance of the National Strategy to Secure Cyberspace (NSSC). [8]</li>
+                        <li>Issuance of the Comprehensive National Cyber-security Initiative (CNCI). [8]</li>
+                        <li>Issuance of the Strategy for Securing Control Systems (SSCS). [8]</li>
+                        <li>Formation of US Cyber Command. [8]</li>
+                    </ul>
+                <p>
+                    Even after the formation of these organizations, the United States does not seem to focus on cyber-defense. Instead, throughout the history of cyber-focused agencies like the NHS have been focused on at first espionage and data collecting, but after 9/11 President Bush ordered the agencies to shift their focus toward cyber-offense, but why? 
+                    One can speculate that simply a great offense is a good defense. If the government agencies focus on offense, they can defend the nation simply through intimidation or data collection on potential threats. Having a good offense in the cyber-realm can be compared to a nation that owns nuclear warheads. Nobody will want to try to attack, let alone threaten a nation that carries such destructive weapons There is much to learn if you are on the offensive. If you are too focused on defense, there is only opportunity to learn vulnerabilities, but only when a vulnerability is exploited. Sure, security gives everyone piece of mind, but for how long is the question. This is why it is understandable for the nation to have focus on offense.
+                    Edward Snowden disagrees with this offensive tactic, he claims that we should be focusing on defense to help keep the peace, which is a good approach for the name of keeping the peace, but is this approach good enough to keep our nation safe? So far, there have not been any major infrastructure attacks within the United States. Does this speak for our offensive strategy? Maybe the government wants to leave it up to the companies that develop security measures because if you cannot produce a product that is secure, who would want to buy it?
+                    This leads up to the implication on the idea of the IoT (Internet of Things). There is a great vision of having control over all things from the touch of a button on your smart device, but being more connected with things we depend on, and if those connections are not secure and vulnerable we risk being tampered with.                   
+                </p>
+        </section>
+        
+        <section id="sources" class="main-section">
+            
+            <header>Sources</header>
+                <p>
+                    <ul>
+                        <li>"Lessons from Stuxnet", Computer, vol. 44, no. , pp. 91-93, April 2011, doi:10.1109/MC.2011.115</li>
+
+                        <li>Ralph Langner, "Stuxnet: Dissecting a Cyberwarfare Weapon", IEEE Security & Privacy, vol. 9, no. , pp. 49-51, May/June 2011, doi:10.1109/MSP.2011.67</li>
+
+                        <li>"What is SCADA?" What is SCADA? Supervisory Control and Data Acquisition. N.p., n.d. Web. 10 Apr. 2017. 'https://inductiveautomation.com/what-is-scada'.</li>
+
+                        <li>Support.microsoft.com. N.p., n.d. Web. 10 Apr. 2017. 'https://support.microsoft.com/en-us/help/815065/what-is-a-dll'.</li>
+
+                        <li>Fisher, Tim. "What Is a Device Driver?" Lifewire. N.p., n.d. Web. 10 Apr. 2017. 'https://www.lifewire.com/what-is-a-device-driver-2625796.</li>
+
+                        <li>"Trojan-Dropper:W32/Stuxnet Description | F-Secure Labs." Trojan-Dropper:W32/Stuxnet Description | F-Secure Labs. N.p., n.d. Web. 10 Apr. 2017. 'https://www.f-secure.com/v-descs/trojan-dropper_w32_stuxnet.shtml'.</li>
+
+                        <li>Cyphershark. "Defending Against Stuxnet." Information Security. N.p., 05 Apr. 2017. Web. 10 Apr. 2017. 'https://sharkscale.wordpress.com/2016/02/06/defending-against-stuxnet'.</li>
+
+                        <li>Dennning, Dorothy E. "Stuxnet: What Has Changed?" Future Internet. N.p., 16 July 2012. Web. 05 Apr. 2017. 'http://brockport.summon.serialssolutions.com/search?s.q=stuxnet%3A what has changed&s.fvf%5B%5D=ContentType%2CJournal Article&s.fvf%5B%5D=ContentType%2CNewspaper Article&s.fvf%5B%5D=ContentType%2CTrade Publication Article&utf8=%13&spellcheck=true&keep_r=true#!/search?ho=t&fvf=ContentType,Journal%20Article,f%7CContentType,Newspaper%20Article,f%7CContentType,Trade%20Publication%20Article,f&l=en&q=stuxnet:%20what%20has%20changed.</li>
+                    </ul>
+                </p>
+        </section>
+
+    </main>
+</body>
+</html>  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Comfortaa&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header id="header">
+
+        <h1 id="headingOne">M.J.T</h1>
+        <h1 id="headingTwo">Cookware</h1>
+        
+        <hr id="lineOne">
+        
+        <nav id="nav-bar">
+            <a id="navOne" class="nav-link" href="#">Learn</a>
+            <a id="navTwo" class="nav-link" href="#">We can email you</a>
+            <a id="navThree" class="nav-link" href="#">Contact us</a>
+        </nav>
+
+    </header>
+    <video id="video" controls>
+        <source src='video/four.mp4' type="video/mp4">
+    </video>
+    <form id="form">
+        
+        <label id="labelEmail" for="email">Email</label>
+        <hr id="lineTwo">
+        <input type="email" name="email" id="email" placeholder="jdoe@example.com">
+        <button id="submit" type="submit">Submit</button>
+        
+    </form>
+    <div id="contactUs">
+        <h2 id="contact">You can reach us:</h2>
+        <p id="telephone">By telephone: 1-800-123-4567</p>
+        <p id="ourEmail">By Email: mjtcookware@businessserver.com </p>
+    </div>
+    <script>
+
+    //get elements of links
+    let contact = document.getElementById('contactUs')
+    let video = document.getElementById('video')
+    let emailForm = document.getElementById('form')
+    //get link elements
+    let emBtn = document.getElementById('navTwo')
+    let learnBtn = document.getElementById('navOne')
+    let contactBtn = document.getElementById('navThree')
+    learnBtn.addEventListener('click', function(){
+        emailForm.style.display = 'none'
+        contact.style.display = 'none'
+        video.style.display = 'block'
+    })
+    emBtn.addEventListener('click', function(){
+        video.style.display = 'none'
+        contact.style.display = 'none'
+        emailForm.style.display = 'grid';
+    })
+    contactBtn.addEventListener('click', function(){
+        video.style.display = 'none'
+        emailForm.style.display = 'none'
+        contact.style.display = 'block'
+    })
+
+    </script>
+</body>
+</html>

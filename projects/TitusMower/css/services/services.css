@@ -1,0 +1,35 @@
+#content{
+    margin-top: 1em;
+}
+#services-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: 1em;
+    animation: fadeIn 2s;
+}
+
+h1{
+    text-align: center;
+    background-color: lightgray;
+    margin-bottom: 1em;
+    padding: .5em;
+    color: #cb0101;
+    text-decoration: underline;
+}
+dl{
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+dl dt a{
+    color: #cb0101;
+}
+#payment{
+    border: black solid 1px;
+}
+@media(max-width: 700px){
+    
+}

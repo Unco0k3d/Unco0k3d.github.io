@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    <title>Survey</title>
+</head>
+<body>
+    <main id="wrapper">
+        <form id="survey-form" action="">
+            <p id="description"></p>
+            <h1 id="title">Portfolio Survey Form</h1>
+            <label for="name" id="name-label">Name:<br>
+                <input type="name" placeholder="Jon Doe">
+            </label>
+            <label for="email" id="email-label">Email:<br>
+                <input id="email" type="email" placeholder="jonDoe@example.com">
+            </label>
+            <label for="age" class="age" id="number-label">Age (optional):<br>
+                <input id="age" type="number" min="1" max="110" placeholder="50">
+            </label>
+            <label id="select-label" for="select" >What best describes you?<br>
+                <select id="dropdown" class="role" name="role">
+                    <option value="career/job">Full-time job/Have a career</option>
+                    <option value="fullTimeStudent">Full-time Student</option>
+                    <option value="partTimeStudent">Part-time Student</option>
+                    <option value="partTimeJop">Part-time job</option>
+                    <option value="disabled">Disability</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label id="ifOther-label" for="ifOther">If other enter a valid role<br>
+                <input id="ifOther" type="validRole" placeholder="ex. philanthropist">
+            </label>
+            <label for="rating" id="rating-label"><div>How would you rate my portfolio?</div><br>
+                <input name="excellent" type="radio">Excellent<br>
+                <input name="good" type="radio">Good<br>
+                <input name="fair" type="radio">Fair<br>
+                <input name="poor" type="radio">poor<br>
+            </label>
+            <label for="favorite" id="fav-label"><div>What is your favorite website/websites in my portfolio?</div><br>
+                <input value="" type="checkbox">Good Time Charlie<br>
+                <input value="" type="checkbox">Tribute<br>
+                <input value="" type="checkbox">Resume<br>
+            </label>
+            <label for="comments" id="comments-label">Comments:<br>
+                <textarea id="comments" name="comments" cols="30" rows="5" placeholder="Suggestions/How to improve"></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

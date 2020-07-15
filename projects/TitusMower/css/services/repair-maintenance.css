@@ -1,0 +1,42 @@
+#maintenance-repair-content{
+    background-color: lightgray;
+    margin: 2em;
+    border-radius: 1em;
+}
+h1{
+    text-align: center;
+    color: #cb0101;
+    background-color: lightgray;
+    margin: 1em 0 1em 0;
+    padding: .5em;
+}
+#maintenance-repair-content ul{
+    /* margin: 1.5em; */
+}
+.list-head{
+    color:#cb0101;
+    font-size: 1.5em;
+    list-style: none;
+    background-color: white;
+    padding: .5em;
+    border-radius: 1em;
+}
+.list-content{
+    margin-top: 1em; 
+    margin-left: 1em;
+}
+/* .list-content li:nth-child(even){
+    background-color: white;
+} */
+.list-content li{
+    margin: .5em 0 .5em 1em;
+}
+.sub-heading{
+    color: #cb0101;
+    background-color: white;
+    list-style: none;
+    padding: .5em;
+    width: fit-content;
+    border-radius: 1em;
+    font-size: 1.2em;
+}

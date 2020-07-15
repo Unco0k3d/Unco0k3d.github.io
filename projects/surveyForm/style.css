@@ -1,0 +1,107 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{}
+
+/* backgound image */
+body{
+    background-image: url(img/back.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wrapper{
+    
+}
+
+div{
+    text-decoration: underline;
+}
+
+#title{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    color: wheat;
+}
+
+#survey-form{
+    background:#360e0c;
+    color: whitesmoke;
+    border-radius: 1%;
+    width: fit-content;
+    padding: 1em;
+    display: block;
+    height: 100%
+}
+
+#survey-form>label{
+    display: block;
+    margin: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    color: wheat;
+}
+
+::placeholder{
+    color: black;
+    opacity: 70%;
+}
+
+#dropdown{
+    border-radius: .25em;
+    border: none;
+    padding: 1%;
+    background: rgb(202, 202, 202);
+    font-size: large;
+}
+
+#comments{
+    border-radius: .25em;
+    border: none;
+    padding: 1%;
+    background: rgb(202, 202, 202);
+    font-size: large;
+}
+
+#survey-form input{
+    border-radius: .25em;
+    border: none;
+    padding: 1%;
+    background: rgb(202, 202, 202);
+    font-size: large;
+}
+
+button[type='submit']{
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', 'sans-serif';
+    background-color: rgb(202, 202, 202);
+    padding: 2%;
+}
+
+
+}
+@media(min-width: 999px){
+    #survey-form{
+        margin-left: 500px;
+    }
+}
+@media(min-height: 1000px){
+    #survey-form{
+        font-size: 1.5em;
+        margin-right: 30%;
+    }
+    input{
+        height: 50px;
+    }
+    select{
+        height: 50px;
+    }
+}

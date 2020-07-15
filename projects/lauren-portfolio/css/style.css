@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(243, 120, 98);
+  }
+body{
+    font-family: 'EB Garamond', serif;
+    background-image: url('../background/flower.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#main-wrapper{
+    background-color: rgba(245, 245, 245, 0.865);
+}
+#top-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    border-bottom: black solid 1px;
+}
+nav{
+    font-size: 1.2em;
+    /* position: fixed; */
+    background-color: white
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    border-bottom: black solid 1px;
+}
+nav ul li{
+    animation: fadeIn 2s;
+    margin: .5em;
+    border-top: #fdb165 solid 2px;
+    border-bottom: #fdb165 solid 2px;
+}
+nav ul li a{
+    padding: 0 .5em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+nav ul li a:focus{
+    color: white;
+    background-color: rgb(87, 87, 87);
+}
+/* logo */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    animation: backInLeft 1s;
+}
+header h1{
+    font-family: 'Dancing Script', cursive;
+    color: #fdb165;
+    font-size: 3em;
+}
+header h2{
+    color:rgb(243, 120, 98);
+}
+header h3{
+    color: rgb(153, 153, 153);
+    text-align: center;
+}
+
+.spartan{
+    font-family: 'Spartan', sans-serif;
+}
+.abril{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+}
+/* icon */
+#icon{
+    display: grid;
+    justify-items: end;
+    animation: backInRight 1.5s;
+    /* position: fixed;
+    position: relative; */
+}
+#linked-in{
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:850px){
+    #top-section{
+        font-size: 1em;
+    }
+    nav{
+        font-size: .9em;
+    }
+    #linked-in{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media(max-width: 415px){
+    header{
+        font-size: .8em;
+    }
+    nav{
+        font-size: .8em;
+    }
+}

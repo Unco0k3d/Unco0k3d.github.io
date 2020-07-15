@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/landing-page.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#headingOne{
+    text-align: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+    margin-top: 3em;
+    animation: fadeIn;
+    animation-duration: 6s;
+    margin-top: 1em;
+    background-color: black;
+}
+
+#headingTwo{
+    text-align: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+    margin-top: 3em;
+    animation: fadeIn;
+    animation-duration: 6s;
+    margin-top: 0;
+    background-color: black;
+}
+
+#lineOne{
+    margin-top: 1.5em;
+    animation: slideIn;
+    animation-duration: 4s;
+}
+
+#lineTwo{
+    animation: slideIn;
+    animation-duration: 4s;
+    grid-area: line;
+}
+
+#nav-bar{
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    animation: fadeIn;
+    animation-duration: 6s;
+    /* animation-delay: 3s; */
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-link:hover{
+    animation-name: enlarge;
+    animation-duration: .5s;
+    /* animation-delay: 1s; */
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.nav-link:focus{
+    text-decoration: underline;
+}
+
+#form{
+    display: none;
+    grid-template-areas:
+        'label label label' 
+        'line line line'
+        '. email .'
+        '. submit .'
+    ;
+    justify-content: space-evenly;
+    grid-gap: 20px;
+    margin-top: 20%;
+}
+
+#labelEmail{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    background-color: black;
+    font-family: 'Cinzel', serif;
+    grid-area: label;
+}
+
+#email{
+    background-color: #4e3f3c;
+    border: 1px solid white;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    width: 300px;
+    border-radius: 10px;
+    grid-area: email;
+}
+
+#submit{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    grid-area: submit;
+}
+
+#submit:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-family: 'Cinzel', serif;
+    transition: 1s;
+}
+
+#submit:active{
+    border: none;
+    font-size: 1em;
+    transition-delay: 1s;
+}
+
+::placeholder{
+    color: white;
+}
+
+#video{
+    display: none;
+    margin: auto;
+    margin-top: 10%;
+    border: 5px solid white;
+    width: 50%
+}
+
+#contactUs{
+    display: none;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'Cinzel', serif;
+}
+
+#contact{
+    margin-bottom: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+}
+
+#telephone{
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+}
+#ourEmail{
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+}
+
+
+@media(max-width: 500px){
+    #nav-bar{
+        flex-direction: column;   
+    }
+    .nav-link{
+        background-color: black;
+    }
+    #telephone,#ourEmail{
+        font-size: .9rem;
+    }
+    #form{
+        margin: 0;
+        display: none;
+    }
+    #lineTwo{
+        display: none;
+    }
+    #labelEmail{
+        display: none;
+    }
+    #video{
+        width: 70%
+    }
+    #email{
+        width: 90%;
+    }
+    body{
+        background-image: url(img/landing-page.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+    }
+    
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes enlarge{
+    0%{
+        font-size: 1em;
+    }
+    100%{
+        font-size: 1.4em;
+    }
+}
+@keyframes slideIn{
+    0%{
+        margin-right: 100%;
+    }
+    100%{
+        margin-right: 0;
+    }
+}

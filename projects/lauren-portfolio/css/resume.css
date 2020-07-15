@@ -1,0 +1,20 @@
+#resume-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-bottom: balck solid 1px;
+    border-right: black solid 1px;
+    border-left: black solid 1px;
+    animation: fadeIns 2s;
+    /* padding-top: 1em; */
+    max-width: 1300px;
+}
+@keyframes fadeIns{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

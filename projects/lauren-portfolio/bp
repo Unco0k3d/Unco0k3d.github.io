@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user-expeince.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=EB+Garamond&family=Quicksand:wght@500&family=Spartan&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+    <title>Lauren's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">USER EXPERIENCE</a></li>
+        <li><a href="#">ACCEPT & REDEEM RECYCLING</a></li>
+        <li><a href="#">UNILEVER PACKAGING DESIGN</a></li>
+        <li><a href="#">UNWRAPPED PACKAGE DESIGN</a></li>
+        <li><a href="#">MISCELLANEOUS DESIGNS</a></li>
+        <li><a href="#">PHOTOGRAPHY</a></li>
+        <li><a href="#">RESUME</a></li>
+      </ul>
+    </nav>
+    <hr id='top-hr'>
+    <div id="top-section">
+      <div>
+      </div>
+      <header>
+        <h1>L</h1>
+        <h2>
+          <span class="abril">lauren</span><span class="spartan">kozak</span>
+        </h2>
+        <h3>
+          <span class="spartan">industrial</span>
+          <span class="abril">designer</span>
+        </h3>
+        <h4>Design a Better Experience</h4>
+      </header>
+      <div id="icon">
+        <img src="../img/linkedIn.PNG" alt="" id="linked-in" />
+      </div>
+    </div>
+    <hr>
+    <main>
+      <div id="main-wrapper">
+        
+      </div>
+    </main>
+    <footer></footer>
+    <link rel="stylesheet" href="../index.js">
+  </body>
+</html>

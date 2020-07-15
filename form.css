@@ -1,0 +1,51 @@
+#contact-form {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 1em;
+    background:#0d1041;
+    color: white;
+    border: none;
+  }
+  .contact-form{
+    
+  }
+  
+  #legend {
+    background: blanchedalmond;
+    color: black;
+    padding: 1em;
+    border-radius: 1em;
+  }
+  
+  #first {
+    margin: 1em;
+  }
+  
+  #last {
+    margin: 1rem;
+  }
+  
+  #email {
+    margin: 1rem;
+  }
+  
+  #phone {
+    margin: 1rem;
+  }
+  
+  #pref {
+    margin: 1rem;
+  }
+  
+  #submit {
+  }
+  
+  #submit button {
+    background: blanchedalmond;
+    color: black;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 0 0 5% 5%;
+    border: none;
+  }

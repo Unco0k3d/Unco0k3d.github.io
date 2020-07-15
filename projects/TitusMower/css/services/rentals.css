@@ -1,0 +1,22 @@
+#rentals-content{
+    background-color: lightgray;
+    margin: 3em;
+    border-radius: 1em;
+    padding-bottom: 1em;
+}
+#rentals-content h1{
+    text-align: center;
+    background-color: white;
+}
+#rentals-content ul{
+    list-style-type: circle;
+    margin: 2em;
+}
+#rentals-content p{
+    color: #cb0101;
+    text-align: center;
+    margin-top: 1em;
+}
+#rentals-content li{
+    margin: 1em;
+}
