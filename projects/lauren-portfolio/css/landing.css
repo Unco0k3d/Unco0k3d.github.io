@@ -35,6 +35,7 @@ a{
     color: rgb(243, 120, 98);
     padding: 1em;
     width: fit-content;
+    width: -moz-max-content;
     border-radius: 1em;
     font-weight: bold;
     font-size: 2em;
