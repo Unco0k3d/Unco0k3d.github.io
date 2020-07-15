@@ -86,7 +86,7 @@ body{
     border-top-right-radius: 1em;
     border-top-left-radius: .25em;
     text-decoration: none;
-    animation: slideInFromRight 1s;
+    animation: slideInFromRight 2s;
     
 }
 #img-container h1 a{

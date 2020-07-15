@@ -9,7 +9,7 @@ document.getElementById('resume')
      open
      </a>
      </h1>
-     <img src="../img/resume.PNG" alt="my resume" />
+     <img src="./img/resume.PNG" alt="my resume" />
      `
 })
 document.getElementById('landing-page')
@@ -22,7 +22,7 @@ document.getElementById('landing-page')
      open
      </a>
      </h1>
-     <img src="../img/landing.PNG" alt="my resume" />
+     <img src="./img/landing.PNG" alt="my resume" />
      `
 })
 
@@ -36,7 +36,7 @@ document.getElementById('tribute')
      open
      </a>
      </h1>
-     <img src="../img/tribute.PNG" alt="tribute page" />
+     <img src="./img/tribute.PNG" alt="tribute page" />
      `
 })
 
@@ -50,7 +50,7 @@ document.getElementById('stuxnet')
      open
      </a>
      </h1> 
-     <img src="../img/stuxnet.PNG" alt="stuxnet analysis" />
+     <img src="./img/stuxnet.PNG" alt="stuxnet analysis" />
      `
 })
 document.getElementById('survey-form')
@@ -63,7 +63,7 @@ document.getElementById('survey-form')
      open
      </a>
      </h1> 
-     <img src="../img/survey.PNG" alt="survey form" />
+     <img src="./img/survey.PNG" alt="survey form" />
      `
 })
 document.getElementById('gtc')
@@ -76,7 +76,7 @@ document.getElementById('gtc')
      open
      </a>
      </h1> 
-     <img src="../img/gtc.PNG" alt="band page" />
+     <img src="./img/gtc.PNG" alt="band page" />
      `
 })
 document.getElementById('lauren')
@@ -89,7 +89,7 @@ document.getElementById('lauren')
      open
      </a>
      </h1> 
-     <img src="../img/lauren.PNG" alt="band page" />
+     <img src="./img/lauren.PNG" alt="band page" />
      `
 })
 document.getElementById('titus-mower')
@@ -102,7 +102,7 @@ document.getElementById('titus-mower')
      open
      </a>
      </h1> 
-     <img src="../img/titus-mower.PNG" alt="band page" />
+     <img src="./img/titus-mower.PNG" alt="band page" />
      `
 })
 //contact form
