@@ -64,7 +64,7 @@ body{
 
 .nav-link:hover{
     animation-name: enlarge;
-    animation-duration: .5s;
+    /* animation-duration: .5s; */
     /* animation-delay: 1s; */
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
@@ -220,7 +220,7 @@ body{
         font-size: 1em;
     }
     100%{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
 @keyframes slideIn{
