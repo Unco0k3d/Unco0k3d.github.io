@@ -66,12 +66,13 @@ body{
     animation-name: enlarge;
     /* animation-duration: .5s; */
     /* animation-delay: 1s; */
-    animation-timing-function: ease-in;
+    /* animation-timing-function: ease-in; */
     animation-fill-mode: forwards;
 }
 
 .nav-link:focus{
     text-decoration: underline;
+    font-size: 1.2em;
 }
 
 #form{
@@ -146,7 +147,7 @@ body{
     width: 50%
 }
 
-#contactUs{
+#contact-us{
     display: none;
     color: white;
     text-align: center;
@@ -195,6 +196,10 @@ body{
     }
     #email{
         width: 90%;
+    }
+    #contact-us{
+        font-size: .9em;
+        width: fit-content;
     }
     body{
         background-image: url(img/landing-page.jpg);
