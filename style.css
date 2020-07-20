@@ -15,9 +15,8 @@ body{
     font-size: 3em;
     background-color: blanchedalmond;
     text-align: center;
-    box-shadow: black ;
     text-decoration: underline;
-    border-bottom: black solid 1px;
+    border-bottom: white solid 2px;
 }
 #header h1{
     animation: farEntry 1s;
@@ -37,6 +36,7 @@ body{
 }
 
 #nav button{
+    outline: none;
     font-family: 'Maven Pro', sans-serif;
     text-decoration: none;
     font-size: 1.5em;

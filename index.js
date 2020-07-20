@@ -89,7 +89,7 @@ document.getElementById('lauren')
      open
      </a>
      </h1> 
-     <img src="./img/lauren.PNG" alt="band page" />
+     <img src="./img/lauren.jpg" alt="band page" />
      `
 })
 document.getElementById('titus-mower')
@@ -103,6 +103,19 @@ document.getElementById('titus-mower')
      </a>
      </h1> 
      <img src="./img/titus-mower.PNG" alt="band page" />
+     `
+})
+document.getElementById('blog')
+.addEventListener('click',function(){
+    document.getElementById('img-container')
+    .innerHTML =
+     `
+     <h1>
+     <a href="https://unco0k3d.github.io/projects/blog/index.html" target="_blank">
+     open
+     </a>
+     </h1> 
+     <img src="./img/blog.PNG" alt="band page" />
      `
 })
 //contact form
