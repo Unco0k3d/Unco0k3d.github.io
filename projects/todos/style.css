@@ -37,7 +37,6 @@ select{
 #list-container{
     display: flex;
     justify-content: center;
-    margin-top: 1em;
 }
 #list{
     display: flex;
@@ -48,11 +47,11 @@ select{
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    margin-top: 1em;
+    margin: 1em 0 0 0;
     transition: all .75s ease;
 }
 .date{
-    padding: .5em;
+    padding: .5em 0 .5em 0;
     background-color: black;
     /* border-top: white solid 1px;
     border-bottom: white solid 1px; */
