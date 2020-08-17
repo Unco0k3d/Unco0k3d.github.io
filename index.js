@@ -89,7 +89,7 @@ document.getElementById('lauren')
      open
      </a>
      </h1> 
-     <img src="./img/lauren.jpg" alt="band page" />
+     <img src="./img/lauren.jpg" alt="lauren portfolio page" />
      `
 })
 document.getElementById('titus-mower')
@@ -102,7 +102,7 @@ document.getElementById('titus-mower')
      open
      </a>
      </h1> 
-     <img src="./img/titus-mower.PNG" alt="band page" />
+     <img src="./img/titus-mower.PNG" alt="titus mower page" />
      `
 })
 document.getElementById('blog')
@@ -115,7 +115,7 @@ document.getElementById('blog')
      open
      </a>
      </h1> 
-     <img src="./img/blog.PNG" alt="band page" />
+     <img src="./img/blog.PNG" alt="blog page" />
      `
 })
 document.getElementById('todo')
@@ -128,7 +128,7 @@ document.getElementById('todo')
      open
      </a>
      </h1> 
-     <img src="./img/blog.PNG" alt="band page" />
+     <img src="./img/todo.PNG" alt="todo list" />
      `
 })
 //contact form
