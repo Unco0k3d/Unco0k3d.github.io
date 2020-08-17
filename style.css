@@ -3,12 +3,14 @@
     margin: 0;
 }
 body{
-    background-image: url('wood.jpg');
+    /* background-image: url('wood.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    overflow: auto;
+    background-size: cover; */
+    background-color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
     font-family: 'DM Sans', sans-serif;
 }
 #header{

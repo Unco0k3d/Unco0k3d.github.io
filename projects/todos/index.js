@@ -63,8 +63,8 @@ function addTodo(td){
     todoDiv.appendChild(date)
     let li = document.createElement('li')
     li.classList.add('list-item')
-    li.innerText = input.value
     todoDiv.appendChild(li)
+    li.innerHTML = `<p>${input.value}</p>`
     let btnDiv = document.createElement('div')
     btnDiv.classList.add('btn-div')
     todoDiv.appendChild(btnDiv)
@@ -95,7 +95,10 @@ function completeOrDelete(e){
     let index = todoArr.indexOf(content)
     if(item.classList.contains('remove')){
         let todoDiv = e.target.parentElement.parentElement
-        todoDiv.remove()
+        todoDiv.classList.add('fall')
+        todoDiv.addEventListener('transitionend',function(){
+            todoDiv.remove()
+        })
         todos.splice(index,1)
         localStorage.setItem('todos',JSON.stringify(todos))
     }
@@ -135,11 +138,11 @@ function getTodos(){
         ul.appendChild(todoDiv)
         let date = document.createElement('div')
         date.classList.add('date')
-        date.innerText = `${i.date}`
+        date.innerText = `${i.date}:`
         todoDiv.appendChild(date)
         let li = document.createElement('li')
         li.classList.add('list-item')
-        li.innerText = i.todo
+        li.innerHTML = `<p>${i.todo}</p>`
         todoDiv.appendChild(li)
         let btnDiv = document.createElement('div')
         btnDiv.classList.add('btn-div')

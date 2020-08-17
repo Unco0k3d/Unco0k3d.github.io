@@ -23,6 +23,10 @@ form input,form button{
     text-align: center;
     outline: none;
 }
+form button{
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
 #add{
     font-weight: bold;
 }
@@ -33,6 +37,7 @@ select{
 #list-container{
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
 #list{
     display: flex;
@@ -41,22 +46,35 @@ select{
 .todo-div{
     display: flex;
     align-items: center;
-    list-style-type: none;
-    margin: 1em 2em 1em 2em;
     justify-content: space-between;
+    list-style-type: none;
+    margin-top: 1em;
+    transition: all 1s ease;
 }
-#date{
+.date{
+    padding: .5em;
     background-color: black;
+    /* border-top: white solid 1px;
+    border-bottom: white solid 1px; */
+}
+.btn-div{
+    display: flex;
+    flex-wrap: nowrap;
 }
 .list-item{
-    margin-left: 1em;
-    padding: 1em;
-
+    width: 100px;
+    line-height: 1.1em;
+    /* border-bottom: white solid 1px;
+    border-top: white solid 1px; */
+}
+p{
+    padding: .5em;
+    word-wrap: break-word;
 }
 .complete{
     outline: none;
     border: none;
-    padding: 1em;
+    padding: .8em;
     margin-right: 0;
 }
 .complete:hover{
@@ -65,10 +83,15 @@ select{
 .remove{
     background-color: rgb(255, 85, 55);
     border: none;
-    padding: 1em;
+    padding: .5em;
 }
 .remove:hover{
     background-color: red;
+}
+/* remove animation */
+.fall{
+    transform: scale(0) rotateZ(180deg);
+    /* opacity: 0; */
 }
 
 /* toggle completed */
@@ -79,4 +102,13 @@ select{
 /* toggle line trough text */
 .line-through{
     text-decoration: line-through;
+}
+
+@media(max-width: 500px){
+    /* .todo-div{
+        margin: 0;
+    }
+    .list-item{
+        padding: 0;
+    } */
 }
