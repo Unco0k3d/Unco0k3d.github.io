@@ -76,8 +76,6 @@ function addTodo(td){
     remove.classList.add('remove')
     remove.innerText = 'X'
     btnDiv.appendChild(remove)
-    // let edit = document.createElement('button')
-    // edit.classList.add('edit')
     let todo = {
         'todo': input.value,
         'date': datePosted,
