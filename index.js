@@ -118,6 +118,19 @@ document.getElementById('blog')
      <img src="./img/blog.PNG" alt="band page" />
      `
 })
+document.getElementById('todo')
+.addEventListener('click',function(){
+    document.getElementById('img-container')
+    .innerHTML =
+     `
+     <h1>
+     <a href="https://unco0k3d.github.io/projects/todos/index.html" target="_blank">
+     open
+     </a>
+     </h1> 
+     <img src="./img/blog.PNG" alt="band page" />
+     `
+})
 //contact form
 document.getElementById('contact')
 .addEventListener('click',function(){

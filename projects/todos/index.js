@@ -40,12 +40,16 @@ function checkContent(e){
     e.preventDefault();
     let content = input.value
     let todos = JSON.parse(localStorage.getItem('todos'))
-    let todosContent = todos.map(todo=>todo.todo)
-    if(todosContent.includes(content))
-        alert('exists')
-    else if(content==='')
-        alert("can't add blank todo")
-    else addTodo(content)
+    if(todos===null)
+        addTodo(content)
+    else{ 
+        let todosArr = todos.map(todo=>todo.todo)
+        if(todosArr.includes(content))
+            alert('exists')
+        else if(content==='')
+            alert("can't add blank todo")
+        else addTodo(content)
+    }
 }
 
 function addTodo(td){
