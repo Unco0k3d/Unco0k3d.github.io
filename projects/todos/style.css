@@ -30,9 +30,9 @@ form button{
 #add{
     font-weight: bold;
 }
-select{
-    padding: .45em;
-    font-size: .8em;
+.radio-btn{
+    margin-left: 1em;
+    
 }
 #list-container{
     display: flex;
@@ -61,7 +61,7 @@ select{
     flex-wrap: nowrap;
 }
 .list-item{
-    width: 100px;
+    width: 110px;
     line-height: 1.1em;
     /* border-bottom: white solid 1px;
     border-top: white solid 1px; */

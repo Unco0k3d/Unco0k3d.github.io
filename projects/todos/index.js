@@ -1,17 +1,22 @@
 const inputBox = document.getElementById('input')
 const add = document.getElementById('add')
 const ul = document.getElementById('list')
-const filter = document.getElementById('filter')
+// const filter = document.getElementById('filter')
+// const radioBtns = document.querySelectorAll('.radio-btn')
+// const all = document.getElementById('all')
+// const complete = document.getElementById()
+const radioDiv = document.querySelector('.radio-btn-container')
 const todoDiv = document.querySelector('.todo-div')
 
+radioDiv.addEventListener('click',filterTodos)
 add.addEventListener('click', checkContent)
 ul.addEventListener('click',completeOrDelete)
 document.addEventListener('DOMContentLoaded',getTodos)
-filter.addEventListener('click',filterTodos)
+
+// filter.addEventListener('click',filterTodos)
 
 function filterTodos(e){
     let todos = JSON.parse(localStorage.getItem('todos'))
-    let completed = todos.filter(i=>i.complete===true)
     let nodes = ul.childNodes
     for(let i=1;i<nodes.length;i++){
         let todoDivNodes = nodes[i].childNodes
@@ -22,7 +27,7 @@ function filterTodos(e){
             case 'all':
                 nodes[i].style.display = 'flex'
                 break;
-            case 'completed':
+            case 'complete':
                 if(completeBtn[0].innerText==='Completed')
                     nodes[i].style.display = 'flex'
                 else nodes[i].style.display = 'none'

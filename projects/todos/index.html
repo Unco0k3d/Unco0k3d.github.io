@@ -16,11 +16,25 @@
         <form action="#">
             <input id="input" type="text" maxlength="20">
             <button id="add" type="submit">+</button>
-            <select name="filter" id="filter">
+            <div class="radio-btn-container">
+
+                <div class="radio-div" id="all">
+                    <input type="radio" name="filter" class="radio-btn" id="all" value="all" checked>All</input>
+                </div>
+
+                <div class="radio-div" id="complete">
+                    <input type="radio" name="filter" class="radio-btn" id="complete" value="complete">Complete</input>
+                </div>
+
+                <div class="radio-div" id="incomplete">
+                    <input type="radio" name="filter" class="radio-btn" id="icomplete" value="incomplete">Incomplete</input>
+                </div>
+            </div>
+            <!-- <select name="filter" id="filter">
                 <option value="all">All</option>
                 <option value="completed">Complete</option>
                 <option value="incomplete">Incomplete</option>
-            </select>
+            </select> -->
         </form>
         <div id="list-container">
             <ul id="list">
