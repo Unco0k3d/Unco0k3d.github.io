@@ -7,17 +7,26 @@ body{
     background-color: black;
     color: white;
 }
-
 main{
 
+}
+#input-container{
+    display: flex;
+}
+#input{
+    font-size: 1.2em;
+}
+.radio-btn-container{
+display: flex;
+margin-top: 1em;
 }
 header,form{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 1em;
 }
 form input,form button{
-    font-size: 1.2;
     padding: .5em;
     border: none;
     text-align: center;
@@ -29,6 +38,8 @@ form button{
 }
 #add{
     font-weight: bold;
+    padding: 1em;
+    margin-left: 0;
 }
 .radio-btn{
     margin-left: 1em;

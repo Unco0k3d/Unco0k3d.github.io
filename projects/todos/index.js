@@ -1,10 +1,6 @@
 const inputBox = document.getElementById('input')
 const add = document.getElementById('add')
 const ul = document.getElementById('list')
-// const filter = document.getElementById('filter')
-// const radioBtns = document.querySelectorAll('.radio-btn')
-// const all = document.getElementById('all')
-// const complete = document.getElementById()
 const radioDiv = document.querySelector('.radio-btn-container')
 const todoDiv = document.querySelector('.todo-div')
 
@@ -12,8 +8,6 @@ radioDiv.addEventListener('click',filterTodos)
 add.addEventListener('click', checkContent)
 ul.addEventListener('click',completeOrDelete)
 document.addEventListener('DOMContentLoaded',getTodos)
-
-// filter.addEventListener('click',filterTodos)
 
 function filterTodos(e){
     let todos = JSON.parse(localStorage.getItem('todos'))
@@ -64,7 +58,7 @@ function addTodo(td){
     ul.appendChild(todoDiv)
     let date = document.createElement('div')
     date.classList.add('date')
-    date.innerText = `${datePosted}`
+    date.innerText = `${datePosted}:`
     todoDiv.appendChild(date)
     let li = document.createElement('li')
     li.classList.add('list-item')
