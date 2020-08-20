@@ -6,9 +6,7 @@
     background:#0d1041;
     color: white;
     border: none;
-  }
-  .contact-form{
-    
+    width: fit-content;
   }
   
   #legend {
