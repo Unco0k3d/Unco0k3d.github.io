@@ -1,10 +1,13 @@
 const inputBox = document.getElementById('input')
 const add = document.getElementById('add')
 const ul = document.getElementById('list')
-const radioDiv = document.querySelector('.radio-btn-container')
+const alpha = document.querySelector('.sort-div')
+console.log(alpha)
+const filterDiv = document.getElementById('filter-container')
 const todoDiv = document.querySelector('.todo-div')
 
-radioDiv.addEventListener('click',filterTodos)
+filterDiv.addEventListener('click',filterTodos)
+alpha.addEventListener('click',sort)
 add.addEventListener('click', checkContent)
 ul.addEventListener('click',completeOrDelete)
 document.addEventListener('DOMContentLoaded',getTodos)
@@ -34,6 +37,42 @@ function filterTodos(e){
         }
     }
     }
+
+function sort(e){
+    e.preventDefault()
+    console.log(e.target)
+    let value = e.target.value
+    let todos = JSON.parse(localStorage.getItem('todos'))
+    if(todos===[]||todos===null){
+        alert('no todos')
+    }
+    if(value==='a-z'){
+        let sorted = todos.sort((a,b)=>{
+            let todoA = a.todo.toUpperCase()
+            let todoB = b.todo.toUpperCase()
+            if(todoA<todoB)
+                return -1
+            if(todoA>todoB)
+                return 1
+            return 0
+        })
+        localStorage.setItem('todos',JSON.stringify(sorted))
+        location.reload()
+    }
+    if(value==='z-a'){
+        let sorted = todos.sort((a,b)=>{
+            let todoA = a.todo.toUpperCase()
+            let todoB = b.todo.toUpperCase()
+            if(todoA>todoB)
+                return -1
+            if(todoA<todoB)
+                return 1
+            return 0
+        })
+        localStorage.setItem('todos',JSON.stringify(sorted))
+        location.reload()
+    }
+}
 
 function checkContent(e){
     e.preventDefault();
@@ -80,6 +119,7 @@ function addTodo(td){
         'date': datePosted,
         'complete': false
     }
+    ul.insertBefore(todoDiv, ul.childNodes[0])
     saveToLocalStorage(todo)
     input.value = ''
 }
@@ -120,10 +160,11 @@ function saveToLocalStorage(todo){
         todos = []
     }
     else todos = JSON.parse(localStorage.getItem('todos'))
-    todos.push(todo)
+    todos.unshift(todo)
     localStorage.setItem('todos', JSON.stringify(todos))
 }
-function getTodos(){
+
+function getTodos(){   
     let todos;
     if(localStorage.getItem('todos')===null)
     todos=[]

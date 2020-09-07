@@ -20,25 +20,37 @@
                 <button id="add" type="submit">+</button>
             
             </div>
-            <div class="radio-btn-container">
+                
+                <div id="filter-container">
 
-                <div class="radio-div" id="all">
-                    <input type="radio" name="filter" class="radio-btn" id="all" value="all" checked>All</input>
+                    <label for="filter">Filter
+                    <div class="radio-div" id="all">
+                        <input type="radio" name="filter" class="radio-btn" id="all" value="all" checked>All</input>
+                    </div>
+    
+                    <div class="radio-div" id="complete">
+                        <input type="radio" name="filter" class="radio-btn" id="complete" value="complete">Complete</input>
+                    </div>
+    
+                    <div class="radio-div" id="incomplete">
+                        <input type="radio" name="filter" class="radio-btn" id="icomplete" value="incomplete">Incomplete</input>
+                    </div>
+                    </label>
                 </div>
 
-                <div class="radio-div" id="complete">
-                    <input type="radio" name="filter" class="radio-btn" id="complete" value="complete">Complete</input>
-                </div>
+                <div id="sort-container">
 
-                <div class="radio-div" id="incomplete">
-                    <input type="radio" name="filter" class="radio-btn" id="icomplete" value="incomplete">Incomplete</input>
+                    <div class="sort-div">
+                        <button class="alpha-sort" value="a-z">A-Z</button>
+                        <button class="alpha-sort" value="z-a">Z-A</button>
+                    </div>
+
+                    <!-- <div class="sort-div">
+                        <input type="radio" name="sorts" id="date-sort" value="date">Recent</input>
+                    </div> -->
+                    
+
                 </div>
-            </div>
-            <!-- <select name="filter" id="filter">
-                <option value="all">All</option>
-                <option value="completed">Complete</option>
-                <option value="incomplete">Incomplete</option>
-            </select> -->
         </form>
         <div id="list-container">
             <ul id="list">

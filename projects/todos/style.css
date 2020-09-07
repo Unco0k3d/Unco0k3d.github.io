@@ -17,8 +17,8 @@ main{
     font-size: 1.2em;
 }
 .radio-btn-container{
-display: flex;
-margin-top: 1em;
+    display: flex;
+    margin-top: 1em;
 }
 header,form{
     display: flex;
@@ -36,13 +36,23 @@ form button{
     background-color: rgb(71, 71, 71);
     color: white;
 }
+.sort-div{
+    display: flex;
+    flex-direction: column;
+}
+.alpha-sort{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0 0 5px;
+}
 #add{
     font-weight: bold;
     padding: 1em;
     margin-left: 0;
 }
 .radio-btn{
-    margin-left: 1em;
+    /* margin-left: 1em; */
     
 }
 #list-container{
