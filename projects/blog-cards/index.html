@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>blog-cards</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" class="form">
+            <div class="inputs">
+                <label for="name">Name</label>
+                <input class="name-input" type="text">
+            </div>
+            <div class="img-inputs-container">
+                <div class="inputs">
+                    <label for="file">Header Image</label>
+                    <input type="file" multiple='false' accept="image/*"
+                    class="header-pic">
+                    <div class="img-container" id="head-img-container">
+                        <img alt="" class="img-preview" id="head-img-preview">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label for="file">Profile Picture</label>
+                    <input type="file" multiple='false' accept="image/*"
+                    class="profile-pic">
+                    <div class="img-container" id="pro-img-container">
+                        <img alt="" class="img-preview" id="pro-img-preview">
+                    </div>
+                </div>
+            </div>
+            <div class="tag-inputs">
+                <div class="inputs">
+                    <label for="tag">Tag</label>
+                    <input class="tag-input" type="text">
+                </div>
+                <div class="colors">
+                        <label for="tag-color">Tag Background Color</label>
+                        <input type="color" class="background-color">
+                        <label for="text-color">Text Color</label>
+                        <input type="color" class="text-color" value="#ffffff">
+                </div>
+            </div>
+            <div class="inputs">
+                <label for="heading">Heading</label>
+                <input class="heading-input" type="text">
+            </div>
+            <div class="inputs">
+                <label for="post">Post</label>
+                <textarea name="post" class="post-input" cols="30" rows="10" placeholder="What you write'n"></textarea>
+            </div>
+            <div class="submit">
+                <button class="add" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="./img/loader.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <span class="tag">I like loaders!</span>
+                <h4>I will talk your ears off about loadies. Why? Because I can</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi iure eius officia ratione esse dicta aspernatur officiis accusamus et vero non recusandae necessitatibus, rerum quasi soluta quibusdam corrupti sequi!</p>
+                <div class="user">
+                    <img src="./img/user-2.jpg" alt="">
+                    <div class="user-info">
+                        <h5>Jim Nasium</h5>
+                        <small>100 years ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

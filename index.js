@@ -131,6 +131,19 @@ document.getElementById('todo')
      <img src="./img/todo.PNG" alt="todo list" />
      `
 })
+document.getElementById('blog-post-app')
+.addEventListener('click',function(){
+    document.getElementById('img-container')
+    .innerHTML =
+     `
+     <h1>
+     <a href="https://unco0k3d.github.io/projects/blog-cards/index.html" target="_blank">
+     open
+     </a>
+     </h1> 
+     <img src="" alt="blog post app" />
+     `
+})
 //contact form
 document.getElementById('contact')
 .addEventListener('click',function(){
