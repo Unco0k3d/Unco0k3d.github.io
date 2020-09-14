@@ -141,7 +141,7 @@ document.getElementById('blog-post-app')
      open
      </a>
      </h1> 
-     <img src="" alt="blog post app" />
+     <img src="./img/blog-posts.PNG" alt="blog post app" />
      `
 })
 //contact form
