@@ -144,6 +144,19 @@ document.getElementById('blog-post-app')
      <img src="./img/blog-posts.PNG" alt="blog post app" />
      `
 })
+document.getElementById('react-todo')
+.addEventListener('click',function(){
+    document.getElementById('img-container')
+    .innerHTML =
+     `
+     <h1>
+     <a href="https://unco0k3d.github.io/projects/MyReactTodoList/index.html" target="_blank">
+     open
+     </a>
+     </h1> 
+     <img src="./img/" alt="react todo list" />
+     `
+})
 //contact form
 document.getElementById('contact')
 .addEventListener('click',function(){
