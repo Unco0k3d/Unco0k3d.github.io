@@ -150,7 +150,7 @@ document.getElementById('react-todo')
     .innerHTML =
      `
      <h1>
-     <a href="https://5f78da123a09c2da5e37afae--mike-ts-reacttodolist.netlify.app/" target="_blank">
+     <a href="https://unco0k3d.github.io/reactTodoList/" target="_blank">
      open
      </a>
      </h1> 
