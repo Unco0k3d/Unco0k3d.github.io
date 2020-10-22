@@ -25,6 +25,7 @@ body{
     font-family: 'Press Start 2P', cursive;
     border-radius: 10px;
     width: 15em;
+    padding: 10px;
 }
 .pad{
     display: flex;
