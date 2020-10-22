@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Press+Start+2P&display=swap');
+
 body{
     box-sizing: border-box;
 }
@@ -7,6 +9,8 @@ body{
     flex-direction: column;
     border: 1px solid;
     padding: 20px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
 }
 .screen{
     display: flex;
@@ -14,15 +18,18 @@ body{
     padding: 15px;
     border: 1px solid;
     border-radius: 10px;
+    background-color: rgb(122, 120, 120);
 }
 .screen input{
     font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+    width: 15em;
 }
 .pad{
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-    align-items: center;
+    background-color: rgb(124, 121, 121);
     border: 1px solid;
     border-radius: 10px;
     padding: 20px;
@@ -32,6 +39,15 @@ body{
     font-size: 30px;
     padding: 24px;
     width: 70px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+}
+.pad .clear,.pad .delete{
+    background-color: tomato;
+    color: black;
 }
 .numbers{
     display: grid;
@@ -41,15 +57,33 @@ body{
     border: 1px solid;
     border-radius: 10px;
     padding: 20px;
+    margin-right: 5px;
+    background-color: rgb(173, 173, 173);
 }
 .operators{
     display: grid;
+    background-color: rgb(173, 173, 173);
     grid-template-columns: 1fr 1fr;
     border: 1px solid;
     border-radius: 10px;
     padding: 20px;
     gap: 5px;
+    margin-left: 5px;
 }
-.operators button{
-    
+
+@media(max-width: 650px){
+    .pad button{
+        font-size: 40px;
+        padding: 0;
+        width: 35px;
+    }   
+    .screen input{
+        font-size: 20px;
+    }
+    .operators{
+        padding: 10px;
+    }
+    .numbers{
+        padding: 10px;
+    }
 }
