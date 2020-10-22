@@ -157,6 +157,19 @@ document.getElementById('react-todo')
      <img src="./img/react-todo-list.PNG" alt="react todo list" />
      `
 })
+document.getElementById('calculator-app')
+.addEventListener('click',function(){
+    document.getElementById('img-container')
+    .innerHTML =
+     `
+     <h1>
+     <a href="https://unco0k3d.github.io/projects/calculator/index.html" target="_blank">
+     open
+     </a>
+     </h1> 
+     <img src="./img/calc.PNG" alt="calculator image" />
+     `
+})
 //contact form
 document.getElementById('contact')
 .addEventListener('click',function(){

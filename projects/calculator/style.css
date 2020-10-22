@@ -1,0 +1,55 @@
+body{
+    box-sizing: border-box;
+}
+.shell{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 20px;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.screen input{
+    font-size: 30px;
+}
+.pad{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.pad button{
+    font-size: 30px;
+    padding: 24px;
+    width: 70px;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    justify-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+.operators{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 5px;
+}
+.operators button{
+    
+}
