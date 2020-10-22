@@ -2,6 +2,8 @@
 
 body{
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 .shell{
     display: flex;
@@ -11,6 +13,7 @@ body{
     padding: 20px;
     background-color: rgb(37, 37, 37);
     border-radius: 10px;
+    max-width: 725px;
 }
 .screen{
     display: flex;
