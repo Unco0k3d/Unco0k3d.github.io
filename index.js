@@ -157,7 +157,7 @@ document.getElementById('react-todo')
      <img src="./img/react-todo-list.PNG" alt="react todo list" />
      `
 })
-document.getElementById('calculator-app')
+document.getElementById('calc-app')
 .addEventListener('click',function(){
     document.getElementById('img-container')
     .innerHTML =
