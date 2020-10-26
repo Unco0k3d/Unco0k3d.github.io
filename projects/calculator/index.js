@@ -48,11 +48,11 @@ function evaluate(equation){
         const after = equation[index+1]
         if(i==='(')
             if(before!==undefined)
-                if(before!=='+'&&before!=='/'&&before!=='-')
+                if(before!=='+'&&before!=='/'&&before!=='-'&&before!=='*')
                     equation.splice(index,1,['*','('])
         if(i===')')
             if(after!==undefined)
-                if(after!=='+'&&after!=='/'&&after!=='-')
+                if(after!=='+'&&after!=='/'&&after!=='-'&&before!=='*')
                     equation.splice(index,1,[')','*'])
     })
     console.log(equation)
