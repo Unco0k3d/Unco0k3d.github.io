@@ -5,7 +5,7 @@ document.getElementById('resume')
     .innerHTML =
      `
      <h1>
-     <a href="https://unco0k3d.github.io/projects/Resume/index.html" target="_blank">
+     <a href="https://unco0k3d.github.io/projects/resume/index.html" target="_blank">
      open
      </a>
      </h1>

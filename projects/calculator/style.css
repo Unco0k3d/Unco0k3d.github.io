@@ -79,15 +79,19 @@ body{
     .pad button{
         font-size: 40px;
         padding: 0;
-        width: 35px;
+        width: 40px;
     }   
     .screen input{
         font-size: 20px;
+        width: 90%;
     }
     .operators{
         padding: 10px;
     }
     .numbers{
         padding: 10px;
+    }
+    .shell{
+        width: 90%;
     }
 }
