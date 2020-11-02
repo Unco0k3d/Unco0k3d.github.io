@@ -1,240 +1,196 @@
-//pages
 document.getElementById('resume')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/resume/index.html" target="_blank">
-     open
-     </a>
-     </h1>
-     <img src="./img/resume.PNG" alt="my resume" />
+     <div class="card">
+             <div class="image">
+                <img src="./img/resume.PNG" alt="">
+             </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/resume/index.html" target='_blank'">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('landing-page')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/landingPage/index.html" target="_blank">
-     open
-     </a>
-     </h1>
-     <img src="./img/landing.PNG" alt="my resume" />
+     <div class="card">
+             <div class="image">
+                <img src="./img/landing.PNG" alt="">
+             </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/landingPage/index.html" target='_blank'">open</a>
+             </div>
+          </div>
      `
 })
-
 document.getElementById('tribute')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/tributePage/tribute.html" target="_blank">
-     open
-     </a>
-     </h1>
-     <img src="./img/tribute.PNG" alt="tribute page" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/tribute.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/tributePage/tribute.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
-
 document.getElementById('stuxnet')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/techDocs/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/stuxnet.PNG" alt="stuxnet analysis" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/stuxnet.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/techDocs/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('survey-form')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/surveyForm/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/survey.PNG" alt="survey form" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/survey.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/surveyForm/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('gtc')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/GTC/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/gtc.PNG" alt="band page" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/gtc.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/GTC/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('lauren')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/lauren-portfolio/html/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/lauren.jpg" alt="lauren portfolio page" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/lauren.jpg" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/lauren-portfolio/html/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('titus-mower')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/TitusMower/html/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/titus-mower.PNG" alt="titus mower page" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/titus-mower.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/TitusMower/html/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('blog')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/blog/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/blog.PNG" alt="blog page" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/blog.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href=" http://unco0k3d.github.io/projects/blog/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('todo')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/todos/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/todo.PNG" alt="todo list" />
-     `
-})
-document.getElementById('blog-post-app')
-.addEventListener('click',function(){
-    document.getElementById('img-container')
-    .innerHTML =
-     `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/blog-cards/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/blog-posts.PNG" alt="blog post app" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/todo.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/todos/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
 document.getElementById('react-todo')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/reactTodoList/" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/react-todo-list.PNG" alt="react todo list" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/react-todo-list.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="https://unco0k3d.github.io/reactTodoList/" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
-document.getElementById('calc-app')
+document.getElementById('blog-post-app')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <h1>
-     <a href="https://unco0k3d.github.io/projects/calculator/index.html" target="_blank">
-     open
-     </a>
-     </h1> 
-     <img src="./img/calc.PNG" alt="calculator image" />
+     <div class="card">
+              <div class="image">
+                  <img src="./img/blog-posts.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="https://unco0k3d.github.io/projects/blog-cards/index.html" target="_blank">open</a>
+             </div>
+          </div>
      `
 })
-//contact form
-document.getElementById('contact')
+document.getElementById('calculator-app')
 .addEventListener('click',function(){
-    document.getElementById('img-container')
+    document.querySelector('.container')
     .innerHTML =
      `
-     <div class="contact-me">
-        <form>
-          <fieldset id="contact-form">
-            <legend id="legend">Your Contact Information</legend>
-    
-            <div id="first">
-              <label for="first"
-                >First Name
-                <input type="text" placeholder="Jane" required />
-              </label>
-            </div>
-    
-            <div id="last">
-              <label for="last"
-                >Last Name
-                <input type="text" placeholder="Doe" />
-              </label>
-            </div>
-    
-            <div id="email">
-              <label for="email"
-                >Email
-                <input type="email" placeholder="janedoe@example.com" required />
-              </label>
-            </div>
-    
-            <div id="phone">
-              <label for="phone"
-                >Home/Cell Number
-                <input type="tel" placeholder="555-555-5555" />
-              </label>
-            </div>
-    
-            <div id="pref">
-              <label for="prefered"
-                >Prefered contact medium/time<br />
-                <textarea
-                  name="prefered"
-                  id="prefered"
-                  cols="30"
-                  rows="10"
-                  placeholder="Phone/Email & Availability"
-                ></textarea>
-              </label>
-            </div>
-    
-            <div id="submit">
-              <button id='submit-button' type="submit">Submit</button>
-            </div>
-          </fieldset>
-        </form>
-      </div>
+     <div class="card">
+     <div class="image">
+         <img src="./img/calc.PNG" alt="">
+       </div>
+    <div class="link">
+         <a href="https://unco0k3d.github.io/projects/calculator/index.html
+         " target="_blank">open</a>
+    </div>
+ </div>
      `
 })
-document.getElementById('submit-button').addEventListener('click',function(e){
-  e.preventDefault()    
-  document.querySelector('contact-me').style.animation = 
-      'rotateplane 1s'
-});
-window.onload = function() {
-  document.getElementById("resume").focus();
-};

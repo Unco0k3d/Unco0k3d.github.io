@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="form.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
-
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header id="header">MJT Portfolio</header>
-    <main id="container">
-      
-      <nav id="nav">
-
-        <h1 id="static-pages-header">Static Sites</h1>
-        <button id="resume">Resume</button>
-        <button id="landing-page">Product Landing Page</button>
-        <button id="tribute">Tribute</button>
-        <button id="stuxnet">stuxnet</button>
-        <button id="survey-form">Survey Form</button>
-        <button id="gtc">Good Time Charlie</button>
-        <button id="lauren">Lauren's Portfolio</button>
-        <button id="titus-mower">Titus Mower</button>
-        <button id="blog">My Blog</button>
-        <button id="contact">Form</button>
-        <h1 id="apps-header">Apps</h1>
-        <button id="todo">Todo App</button>
-        <button id="react-todo">React Todo</button>
-        <button id="blog-post-app">Blog Post App</button>
-        <button id="calculator-app">Calculator</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"/>
+    <title>MJT Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>MJT Portfolio</h1>
+    </header>
+    <nav id="nav">
+        <div class="sub-header">
+            <h1 id="static-pages-header">Static Sites</h1>
+        </div>
+        <div class="static-pages">
+            <button id="resume">Resume</button>
+            <button id="landing-page">Product Landing Page</button>
+            <button id="tribute">Tribute</button>
+            <button id="stuxnet">stuxnet</button>
+            <button id="survey-form">Survey Form</button>
+            <button id="gtc">Good Time Charlie</button>
+            <button id="lauren">Lauren's Portfolio</button>
+            <button id="titus-mower">Titus Mower</button>
+            <button id="blog">My Blog</button>
+            <!-- <button id="contact">Form</button> -->
+        </div>
+                <div class="sub-header">
+                    <h1 id="apps-header">Web Apps</h1>
+                </div>
+        <div class="apps">
+            <button id="todo">Todo App</button>
+            <button id="react-todo">React Todo</button>
+            <button id="blog-post-app">Blog Post App</button>
+            <button id="calculator-app">Calculator</button>
         <!-- <button id="phonebook">React Phonebook</button> -->
-     
+        </div>
       </nav>
-
-      <div id="img-container">
-        <h1>
-          <a href="https://unco0k3d.github.io/projects/Resume/index.html" target="_blank">
-          open
-          </a>
-          </h1>
-          <img src="./img/resume.PNG" alt="my resume" />
-      </div>
-      <!-- <div id="contact-form"></div> -->
-
-    </main>
-    <script src="index.js"></script>
-  </body>
+      <main class="container">
+          <div class="card">
+              <div class="image">
+                  <img src="./img/resume.PNG" alt="">
+                </div>
+             <div class="link">
+                  <a href="http://unco0k3d.github.io/projects/resume/index.html" target="_blank">open</a>
+             </div>
+          </div>
+      </main>
+      <script src="./index.js"></script>
+</body>
 </html>
