@@ -1,3 +1,15 @@
+const card = document.querySelector('.container')
+
+console.log(card)
+
+document.querySelector('#nav')
+.addEventListener('click',function(e){
+    const randNum = Math.floor(Math.random()*11)-5
+    const button = e.target.classList.value
+    if(button==='button')
+        card.style.setProperty('transform',`rotate(${randNum}deg)`,'important')
+})
+
 document.getElementById('resume')
 .addEventListener('click',function(){
     document.querySelector('.container')
