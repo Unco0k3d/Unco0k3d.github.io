@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>fetch</title>
 </head>
 <body>
-    <h1>Fetch Dummy Data</h1>
-    <button id="button">get data</button>
-    <ul id="list">
-        <li>
-            <p>id: id</p>
-            <p>userId: userId</p>
-            <p>title: title</p>
-        </li>
-    </ul>
+    <header>
+        <h1 id="top-header">Fetch Dummy Data</h1>
+    </header>
+    <div id="buttons">
+        <button class="button" id="get">GET</button>
+        <button class="button" id="post">POST</button>
+        <button class="button" id="put-patch">PUT/PATCH</button>
+        <button class="button" id="delete">DELETE</button>
+        <button class="button" id="sim-request">Simultaneus Request</button>
+        <button class="button" id="custom-header">Custom Headers</button>
+        <button class="button" id="transform-response">Transform Response</button>
+        <button class="button" id="transform-request">Transform Request</button>
+        
+    <!-- <button class="button" id="">get data</button> -->
+    </div>
+    <div id="container">
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script src='index.js'></script>
 </body>
 </html>

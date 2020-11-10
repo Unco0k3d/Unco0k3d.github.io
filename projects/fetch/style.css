@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top-header{
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.head-content-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.head-content-container h1{
+    border-bottom: 1px solid;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+section{
+    padding: 20px;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    padding: 5px;
+    margin: 5px;
+}
