@@ -7,7 +7,7 @@ document.querySelector('#nav')
     const randNum = Math.floor(Math.random()*11)-5
     const button = e.target.classList.value
     if(button==='button')
-        card.style.setProperty('transform',`rotate(${randNum}deg)`,'important')
+        card.style.setProperty('transform',`rotate(${randNum}deg)`)
 })
 
 document.getElementById('resume')
@@ -115,21 +115,21 @@ document.getElementById('lauren')
           </div>
      `
 })
-document.getElementById('titus-mower')
-.addEventListener('click',function(){
-    document.querySelector('.container')
-    .innerHTML =
-     `
-     <div class="card">
-              <div class="image">
-                  <img src="./img/titus-mower.PNG" alt="">
-                </div>
-             <div class="link">
-                  <a href="http://unco0k3d.github.io/projects/TitusMower/html/index.html" target="_blank">open</a>
-             </div>
-          </div>
-     `
-})
+// document.getElementById('titus-mower')
+// .addEventListener('click',function(){
+//     document.querySelector('.container')
+//     .innerHTML =
+//      `
+//      <div class="card">
+//               <div class="image">
+//                   <img src="./img/titus-mower.PNG" alt="">
+//                 </div>
+//              <div class="link">
+//                   <a href="http://unco0k3d.github.io/projects/TitusMower/html/index.html" target="_blank">open</a>
+//              </div>
+//           </div>
+//      `
+// })
 document.getElementById('blog')
 .addEventListener('click',function(){
     document.querySelector('.container')
